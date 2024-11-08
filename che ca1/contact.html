@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - LPU solar project</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        background-color: #f5f5f5;
+    }
+    .header {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        
+    }
+    .header img {
+        height: 100px;
+    width:300px;
+    margin: 10px;
+    }
+    .nav {
+        margin-left: auto;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .nav a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .nav .contact-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .banner {
+        background-image: url('solar22.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        max-width: 800px;
+        margin: -50px auto 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    .content h2 {
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .content p {
+        color: #555;
+        margin-bottom: 20px;
+    }
+    .content .faq-button {
+        background: none;
+        border: 2px solid #4CAF50;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: #4CAF50;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .form-group {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .form-group label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .form-group input, .form-group select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    min-width: 100px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    border-radius: 100px;
+    
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-left a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-center h3,
+.footer-right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ddd;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+.donate-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.donate-btn:hover {
+    background-color: #3e8e41;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.bottom-links {
+    margin-bottom: 10px;
+}
+
+.bottom-links a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.bottom-links a:hover {
+    color: #4CAF50;
+}
+
+
+.form-group {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .form-group label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        resize: vertical;
+        height: 150px;
+    }
+    .form-group .checkbox-group {
+        display: flex;
+        align-items: center;
+    }
+    .form-group .checkbox-group input {
+        margin-right: 10px;
+    }
+    .submit-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.jpg" alt="LPU solar project" >
+    <div class="nav">
+        <a href="#">Who We Are</a>
+        <a href="#">What We Do</a>
+        <a href="#">Opportunities</a>
+        <a href="#">Resources</a>
+        <a href="#">Stories</a>
+        <a href="process.html">Process</a>
+        <a href="login.html">Log in</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+</div>
+
+<div class="banner">
+    <!-- Banner Image Section -->
+</div>
+
+<div class="content">
+    <h2>We want to hear from you</h2>
+    <p>Do you have questions about EJN or how to use the website?</p>
+    <button class="faq-button">Read the FAQs</button>
+    
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Your name *</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Your email address *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="inquiry">What is your inquiry? *</label>
+            <select id="inquiry" name="inquiry" required>
+                <option value="" disabled selected>- Select a value -</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="faqCheck" name="faqCheck" required>
+            <label for="faqCheck">I have consulted the FAQs before submitting my inquiry *</label>
+        </div>
+        <button type="submit" class="submit-button">Send message</button>
+    </form>
+</div>
+
+
+
+ <!-- Footer Links -->
+ <footer class="main-footer">
+    <div class="footer-container">
+        <!-- Left Section: Logo and Description -->
+        <div class="footer-left">
+            <img src="logo.jpg" alt="Earth Journalism Network Logo" class="footer-logo">
+            <p>A project of <a href="#">Internews</a></p>
+        </div>
+
+        <!-- Center Section: Social Media Links -->
+        <div class="footer-center">
+            <h3>Follow us</h3>
+            <div class="social-icons">
+                <a href="#"> <img src="fb.png" style=" border-radius: 100px; height: 60px;"></a>
+                <a href="#"> <img src="ins.png" style=" border-radius: 100px; height: 60px;"></a>
+                <a href="#"> <img src="link.png" style=" border-radius: 100px; height: 60px;"></a>
+                <a href="#"> <img src="twit.png" style=" border-radius: 100px; height: 60px;"></a>
+                <a href="#"> <img src="yout.png" style=" border-radius: 100px; height: 60px;"></a>
+            </div>
+        </div>
+
+        <!-- Right Section: Donate Button -->
+        <div class="footer-right">
+            <h3>Support our global community</h3> <br>
+            <a href="#" class="donate-btn">Donate Now</a>
+        </div>
+    </div>
+
+    <!-- Bottom Section: Links and Copyright -->
+    <div class="footer-bottom">
+        <div class="bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQs</a>
+            <a href="#">GenAI Guidelines</a>
+        </div>
+        <p>&copy; 2024 LPU SOLAR PROJECT. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
